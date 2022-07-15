@@ -1,0 +1,17 @@
+.filter {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: none;
+  outline: 2px solid black;
+  border-radius: 2px;
+
+  &:focus {
+    outline: 2px solid skyblue;
+  }
+}
+.label {
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
+}

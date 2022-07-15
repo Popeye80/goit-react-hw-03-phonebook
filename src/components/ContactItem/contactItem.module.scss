@@ -1,0 +1,27 @@
+.contactList__item {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.contactList__name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.contactList__number {
+  margin-right: 35px;
+}
+.contactList__btn {
+  border: none;
+  cursor: pointer;
+  display: block;
+  color: white;
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+}
