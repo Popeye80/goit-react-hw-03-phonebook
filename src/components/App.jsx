@@ -36,12 +36,11 @@ export class App extends Component {
     console.log(data);
     const { contacts } = this.state;
     const { name, number } = data;
+    const addInContact = contacts.some(
+      contact => contact.name.toLowerCase() === name.toLowerCase()
+    );
 
-    if (
-      contacts.some(
-        contact => contact.name.toLowerCase() === name.toLowerCase()
-      )
-    ) {
+    if (addInContact) {
       return alert(`${name} is already in contacts`);
     } else {
       const contact = {
